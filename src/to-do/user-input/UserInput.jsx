@@ -1,5 +1,6 @@
 
 import Button from "../button"
+import './style.css'
 
 const UserInput=(props)=>{
     const {AddButtonName,handleUserinput,getuserinput,Addtask}=props
@@ -9,9 +10,9 @@ const UserInput=(props)=>{
     }
     
     return(
-        <div>
-            
-            <input type="text" value={getuserinput} onChange={(e)=>getuserinputValue(e)}></input>
+        <div className="usercss">
+            <label htmlFor="button"/>
+            <input type="text" value={getuserinput} onChange={(e)=>getuserinputValue(e)} id="button"></input>
             <Button buttonName={AddButtonName} onClick={Addtask}/>
         </div>
     )

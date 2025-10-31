@@ -2,7 +2,7 @@ import { useState } from "react"
 import Button from "./button"
 import ListItem from "./list-item"
 import UserInput from "./user-input"
-
+import './style.css'
 const Todo=(props)=>{
     const{fakeData,AddButtonName,DeleteButtonName}=props
 
@@ -35,16 +35,15 @@ const Todo=(props)=>{
         completed:true
 
        }
-       console.log('fakeDat',fakeData)
 
        Setdata([...data,fakeData])
     }
-
+    console.log('data**',data);
 
     return(
         <div>
             <p>Todo</p>
-                <div>
+                <div className="todo">
                     <UserInput AddButtonName={AddButtonName} handleUserinput={handleUserinput} getuserinput={getuserinput} Addtask={Addtask}/>
                     <ListItem data={data} DeleteButtonName={DeleteButtonName} DeleteuserClick={DeleteuserClick} />
                 </div> 
