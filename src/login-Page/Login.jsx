@@ -19,7 +19,7 @@ const Login=()=>{
         console.log('getlocalstorage',getlocalstorage)
 
         const fidnuserexistorNot=getlocalstorage.find((check)=>{
-            if(check.username==value.username && check.password==value.password){
+            if(check.username==value.username && check.password==value.password &&value.username.length>0 && value.password.length>0){
                 alert('correct username and password')
                 return navigate('/todo')
             }   else{

@@ -37,6 +37,7 @@ const Todo=(props)=>{
        }
 
        Setdata([...data,fakeData])
+       Setgetuserinpput('')
     }
     console.log('data**',data);
 
