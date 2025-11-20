@@ -14,3 +14,5 @@ export const fakeData=[
 export const AddButtonName="Add"
 
 export const DeleteButtonName="Delete"
+
+export const EditButtonName="Edit"

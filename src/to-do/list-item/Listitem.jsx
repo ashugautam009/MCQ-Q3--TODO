@@ -1,7 +1,7 @@
 import Button from "../button"
 
 const ListItem=(props)=>{
-    const{data,DeleteButtonName,DeleteuserClick}=props
+    const{data,DeleteButtonName,DeleteuserClick,EditButtonName,EdituserClick}=props
     
     return(
         <div>
@@ -22,6 +22,7 @@ const ListItem=(props)=>{
                                 <td>{index+1}</td>
                                 <td>{check.text}</td>
                                 <Button buttonName={DeleteButtonName} onClick={()=>DeleteuserClick(check.id)} />
+                                <Button buttonName={EditButtonName} onClick={()=>EdituserClick(check.id)}/>
                             </tr>
                             
                             
